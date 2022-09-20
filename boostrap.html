@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset = "utf-8"/>
-        <title>Studio Ghibli &#9829;</title>
+        <title>Studio Ghibli</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
-            <nav id="homepage" class="navbar navbar-inverse navbar-fixed-top">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="#homepage">Home</a></li>
-                    <li class="nav-item"><a href="#history">History</a></li>
-                    <li class="nav-item"><a href="#films">Films</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#extras">Extras<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#locations">Page 1-1</a></li>
-                          <li><a href="#foods">Page 1-2</a></li>
-                        </ul>
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#films">Films</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" 
+                        href="#">Extras <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#locations">Filming Locations</a></li>
+                        <li><a href="#foods">Recipes</a></li>
+                      </ul>
                     </li>
                 </ul>
             </nav>
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#homepage">homepage</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#films">Films</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#extras">Extras<span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#locations">Real-Life Locations</a></li>
-                        <li><a href="#foods">Studi Ghibli Recipes</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
             <div class="row">
                 <div class="col-xl-12">
-                    <img src="studio ghibli films.png" alt="collage of studio ghibli movies" width="100%" height="100%" style="margin:70px 0px">
+                    <img src="studio ghibli films.png" alt="collage of studio ghibli movies" width="100%" height="100%" style="margin:70px 0px" id="homepage">
                 </div>
             </div>
+            <!-- use bootstrap blockquote element -->
             <div>
+                <blockquote>
+                  <p>Once you've met someone, you never really forget them. It just takes a while for your memories to return.</p>
+                  <footer>From <i>Spirited Away</i> (2001)</footer>
+                </blockquote>
+              </div>
+            <div>
+                <img src="history.png" id=history height="35%" width="35%" algin="left">
+            </div>
+            <!-- <div>
                 <h1 id="history">History</h1>
+            </div> -->
             <div class="row">
                 <div class="col-xl-12">
                     <p>
@@ -55,108 +57,71 @@
                 </div>
             </div>
             <!-- choose larger picture -->
-            <div class="row">
-                <div class="col-md-3"><img src="kikiCake.jpg"></div>
-                <div class="col-md-3"><img src="kikiCake.jpg"></div>
-                <div class="col-md-3"><img src="kikiCake.jpg"></div>
-                <div class="col-md-3"><img src="kikiCake.jpg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" align="center"><img src="posterMiyazaki.png" alt="director miyazaki and a poster for The Wind Rises (2013)">Director Miyazaki and a poster for <br><i>The Wind Rises</i> (2013)</div>
+                    <div class="col-md-3" align="center"c><img src="cartoon.png" alt="cartoon rendition of miyazaki">A cartoon rendition of Director Miyazaki via <i>Indie Wire</i></div>
+                    <div class="col-md-3" align="center"><img src="busyMiyazaki.png" alt="miyazaki working on sketches">Director Miyazaki working on <br>his sketches</div>
+                    <div class="col-md-3" align="center"><img src="sketches.png" alt="Miyazaki's original sketches for Porco Rosso">Director Miyazaki's original sketches for <i>Porco Rosso</i> (1992)</div>
+                </div>
+            </div>
+            <div>
+                <img src="films.png" id="films" height="35%" width="35%" algin="left">
             </div>
             <!-- <div>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="miyazaki.jpg" alt="director miyazaki and a poster for The Wind Rises (2013)" width="100%" height="100%">
-                        </td>
-                        <td>
-                            <img class="col-xxl-4" src="porcoRossoSketch.jpg" alt="Miyazaki's original sketches for Porco Rosso (1992)" width="100%" height="100%">
-                        </td>
-                        <td>
-                            <img class="col-xxl-4" src="cartoonMiyazaki.jpeg" alt="cartoon rendition of Miyazaki with all his work" width="100%" height="100%">
-                        </td>
-                        <td>
-                            <img class="col-xxl-4" src="totoroSketches.jpeg" alt="Miyazaki's original sketches for My Neighbor Totoro (1998)" width="100%" height="100%">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Miyazaki with a poster of the <br>2013 film, The Wind Rises</p>
-                        </td>
-                        <td>
-                            <p>Miyazaki's initial character sketches for the<br>1992 film, Porco Rosso</p>
-                        </td>
-                        <td>
-                            <p>
-                                Cartoon rendition of Miyazaki and Studio Ghibli characters via IndieWire
-                            </p>
-                        </td>
-                        <td>
-                            <p>Miyazaki's initial character sketches for the<br>1998 film, My Neighbour Totoro
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </div> -->
-            <div>
                 <h1 id="films">Films</h1>
-            </div>
-            <div>
-                <table>
-                    <tr>
-                        <th><b>MOVIES:</b></th>
-                        <th><b>RATINGS:</b></th>
-                        <th><b>NOTABLE ACTORS:</b></th>
-                    </tr>
-                    <tr>
-                    <td>
-                            <ol>
-                                <li><i>Nausicaa of the Valley of the Wind</i> (1984)</li>
-                                <li><i>Castle in the Sky</i> (1986)</li>
-                                <li><i>Whisper of the Heart</i> (1995)</li>
-                                <li><i>Princess Mononoke</i> (1997)</li>
-                                <li><i>Kiki's Delivery Service</i> (1998)</li>
-                                <li><i>My Neighbor Totoro</i> (1998)</li>
-                                <li><i>Spirited Away</i> (2001)</li>
-                                <li><i>The Cat Returns</i> (2002)</li>
-                                <li><i>Howl's Moving Castle</i> (2004)</li>
-                                <li><i>Ponyo (2008)</i></li>
-                                <li><i>The Wind Rises</i> (2013)</li>
-                            </ol>
-                    </td>
-                    <td>
-                            <ol>
-                                <li>&#9733;&#9733;&#9733;</li>
-                                <li>&#9733;&#9733;&#9733;</li>
-                                <li>&#9733;&#9733;&#9733;</li>
-                                <li>not yet watched</li>
-                                <li>&#9733;&#9733;&#9733;&#9733;&#9733;</li>
-                                <li>&#9733;&#9733;&#9733;&#9733;</li>
-                                <li>&#9733;&#9733;&#9733;&#9733;&#9733;</li>
-                                <li>not yet watched</li>
-                                <li>&#9733;&#9733;&#9733;&#9733;&#9733;</li>
-                                <li>&#9733;&#9733;&#9733;</li>
-                                <li>&#9733;&#9733;&#9733;</li>
-                            </ol>
-                        </td>
-                        <td>
-                            <ol>
-                                <li>Shia LaBeouf, Mark Hamill</li>
-                                <li>Mark Hamil, Mandy Patinkin</li>
-                                <li>Brittany Snow, Ashley Tisdale</li>
-                                <li>John DiMaggio, Claire Danes, Minnie Driver</li>
-                                <li>Kirsten Dunst, Debbie Reynolds</li>
-                                <li>Dakota and Elle Fanning, Lea Salonga</li>
-                                <li>Mari Natsuki, Daveigh Chase</li>
-                                <li>Tim Curry, Anne Hathaway, Kristen Bell</li>
-                                <li>Christian Bale, Josh Hutcherson</li>
-                                <li>Lily Tomlin, Tina Fey, Matt Damon, Betty White</li>
-                                <li>Joseph Gordon-Levitt, Emiy Blunt, and John Krasinski</li>
-                            </ol>
-                        </td>
-                        <td>
-                            <a href="https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works" target="_blank"><img src="allFilms.png" alt="image map" width="100%" height="100%"></img></a>
-                        </td>
-                    </tr>
-                </table>
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <b>MOVIES:</b>
+                        <ol>
+                            <li><i>Nausicaa</i> (1984)</li>
+                            <li><i>Castle in the Sky</i> (1986)</li>
+                            <li><i>Whisper of the Heart</i> (1995)</li>
+                            <li><i>Princess Mononoke</i> (1997)</li>
+                            <li><i>Kiki's Delivery Service</i> (1998)</li>
+                            <li><i>My Neighbor Totoro</i> (1998)</li>
+                            <li><i>Spirited Away</i> (2001)</li>
+                            <li><i>The Cat Returns</i> (2002)</li>
+                            <li><i>Howl's Moving Castle</i> (2004)</li>
+                            <li><i>Ponyo (2008)</i></li>
+                            <li><i>The Wind Rises</i> (2013)</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-2">
+                        <b>RATING:</b>
+                        <ol>
+                            <li>&#9733;&#9733;&#9733;</li>
+                            <li>&#9733;&#9733;&#9733;</li>
+                            <li>&#9733;&#9733;&#9733;</li>
+                            <li>not yet watched</li>
+                            <li>&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                            <li>&#9733;&#9733;&#9733;&#9733;</li>
+                            <li>&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                            <li>not yet watched</li>
+                            <li>&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+                            <li>&#9733;&#9733;&#9733;</li>
+                            <li>&#9733;&#9733;&#9733;</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-5">
+                        <b>NOTABLE ACTORS:</b>
+                        <ol>
+                            <li>Shia LaBeouf, Mark Hamill</li>
+                            <li>Mark Hamil, Mandy Patinkin</li>
+                            <li>Brittany Snow, Ashley Tisdale</li>
+                            <li>John DiMaggio, Claire Danes, Minnie Driver</li>
+                            <li>Kirsten Dunst, Debbie Reynolds</li>
+                            <li>Dakota and Elle Fanning, Lea Salonga</li>
+                            <li>Mari Natsuki, Daveigh Chase</li>
+                            <li>Tim Curry, Anne Hathaway, Kristen Bell</li>
+                            <li>Christian Bale, Josh Hutcherson</li>
+                            <li>Lily Tomlin, Tina Fey, Matt Damon, Betty White</li>
+                            <li>Joseph Gordon-Levitt, Emily Blunt, and John Krasinski</li>
+                        </ol>
+                    </div>
+                </div>
             </div>
             <div>
                 <h1 id="extras">Extras</h1>
@@ -164,37 +129,14 @@
             <div>
                 <h2 id="locations">Real-Life Locations</h2>
             </div>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <img src="mononoke.png" alt="princess mononoke filming location" width="100%" height="100%">
-                        </td>
-                        <td>
-                            <img src="windrises.png" alt="wind rises filming location" width="100%" height="100%">
-                        </td>
-                        <td>
-                            <img src="spiritedAway.png" alt="spirited away filming location" width="100%" height="100%">
-                        </td>
-                        <td>
-                            <img src="porcoRosso.png" alt="porco rosso filming location" width="100%" height="100%">
-                        </td>
-                    </tr>
-                    <tr id="locationText">
-                        <td>
-                            <p>Yakushima Island, Japan in<br>Princess Mononoke (1997)</p>
-                        </td>
-                        <td>
-                            <p>Kamikochi Imperial Hotel, Japan in<br>The Wind Rises (2013)</p>
-                        </td>
-                        <td>
-                            <p>Jiufen, Taiwan in<br>Spirited Away (2001)</p>
-                        </td>
-                        <td>
-                            <p>Stiniva Cove, Croatia in<br>Porco Rosso (1992)</p>
-                        </td>
-                    </tr>
-                </table>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3" align="center"><img src="mononoke.png" alt="filming location for Princess Mononoke">Yakushima Island, Japan in<br><i> Princess Mononoke</i> (1997)</div>
+                    <div class="col-md-3" align="center"c><img src="windrises.png" alt="filming location for The Wind Rises">Kamikochi Imperial Hotel, Japan in <i>The Wind Rises</i> (2013)</div>
+                    <div class="col-md-3" align="center"><img src="spiritedAway.png" alt="filming location for Spirited Away">Jiufen, Taiwan in <br><i>Spirited Away</i> (2001)</div>
+                    <div class="col-md-3" align="center"><img src="porcoRosso.png" alt="filming location for Porco Rosso">Stiniva Cove in <br><i>Porco Rosso</i> (1992)</div>
+                </div>
+            </div>
                 <h2 id="foods">Foods Seen in Studio Ghibli Films</h2>
                 <h3>Click on the images below to learn how to make them!</h3>
                 <table>
@@ -256,6 +198,16 @@
                         </td>
                     </tr>
                 </table>
+            </div>
+            <div class="container mt-3">
+                <div class="card" style="width:200px">
+                  <img class="card-img-top" src="kikiCake.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Kiki's Chocolate Cake</h4>
+                    <p class="card-text">this adorable chocolate cake was seen in<br> <i>Kiki's Delivery Service </i>(1998)</p>
+                    <a href="http://wonderlandrecipes.com/2016/08/25/kikis-chocolate-cake" target=_blank class="btn btn-primary">click here to make!</a>
+                  </div>
+                </div>
             </div>
         </div>
     </body>
