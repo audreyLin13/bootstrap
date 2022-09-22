@@ -1,10 +1,12 @@
-#homepage {
-    padding-bottom:-5%;
-}
+
 #history {
     padding-bottom: 2%;
 }
 #films {
     padding-top: 5%;
     padding-bottom: 2%
+}
+
+#carousel {
+    padding-top: 5%
 }
